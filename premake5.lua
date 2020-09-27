@@ -1,11 +1,17 @@
 project "ImGui"
-	kind "StaticLib"
+	kind "SharedLib"
 	language "C++"
     cppdialect "C++17"
-    staticruntime "on"
+    staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    defines
+    {
+        "IMGUI_DYNAMIC_DLL",
+        "IMGUI_BUILD_DLL"
+    }
 
 	files
 	{
