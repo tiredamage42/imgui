@@ -9,7 +9,6 @@ project "ImGui"
 
     defines
     {
-        "IMGUI_DYNAMIC_DLL",
         "IMGUI_BUILD_DLL"
     }
 
