@@ -23,6 +23,10 @@
 #pragma once
 #include "imgui.h"      // IMGUI_IMPL_API
 
+#undef IMGUI_IMPL_API
+#define IMGUI_IMPL_API
+
+
 struct GLFWwindow;
 struct GLFWmonitor;
 
